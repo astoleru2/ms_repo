@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <map xmlns="http://www.axway.com/mappingServices/map" id="77bd23a0-fe6b-4982-9e22-0c97803e8914">
-   <signature appVersion="3.1.2" lastUpdatedOn="28/09/2016 12:45:35 +0300"/>
+   <signature appVersion="3.1.2" lastUpdatedOn="28/09/2016 12:48:33 +0300"/>
    <outputBusinessDocument businessDocument="~/Business Documents/x12test.bdoc" alias="out"/>
    <inputBusinessDocuments>
       <inputBusinessDocument businessDocument="~/Business Documents/x12test.bdoc" alias="in"/>
@@ -23,12 +23,6 @@
       </mapElement>
       <mapElement elementHash="-582897735" elementPath="/HEADER/ISA/e05_I05/">
          <dmlExpression><![CDATA[in:\HEADER\ISA\e05_I05]]></dmlExpression>
-      </mapElement>
-      <mapElement elementHash="30165397" elementPath="/HEADER/GS/">
-         <dmlExpression><![CDATA[%occurs := 0;
-if defined in:\HEADER\GS then
-	%occurs := 1;
-%occurs times]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-108770681" elementPath="/HEADER/ISA/e16_I15/">
          <dmlExpression><![CDATA[in:\HEADER\ISA\e16_I15]]></dmlExpression>
