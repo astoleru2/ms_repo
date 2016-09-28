@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="77bd23a0-fe6b-4982-9e22-0c97803e8914">
+   <signature appVersion="3.1.2" lastUpdatedOn="28/09/2016 11:56:05 +0300"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/x12test.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/x12test.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="1334598943" elementPath="/TRANSACTION/ST/329/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\ST\!329!]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1460878298" elementPath="/HEADER/ISA/e03_I03/">
+         <dmlExpression><![CDATA[in:\HEADER\ISA\e03_I03]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-499262927" elementPath="/HEADER/ISA/e14_I13/">
+         <dmlExpression><![CDATA[in:\HEADER\ISA\e14_I13]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1486537223" elementPath="/HEADER/ISA/e09_I08/">
+         <dmlExpression><![CDATA[in:\HEADER\ISA\e09_I08]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="570281867" elementPath="/HEADER/ISA/e02_I02/">
+         <dmlExpression><![CDATA[in:\HEADER\ISA\e02_I02]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="14184533" elementPath="/HEADER/ISA/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\HEADER\ISA then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-582897735" elementPath="/HEADER/ISA/e05_I05/">
+         <dmlExpression><![CDATA[in:\HEADER\ISA\e05_I05]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="30165397" elementPath="/HEADER/GS/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\HEADER\GS then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-108770681" elementPath="/HEADER/ISA/e16_I15/">
+         <dmlExpression><![CDATA[in:\HEADER\ISA\e16_I15]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1014526569" elementPath="/HEADER/ISA/e07_I05/">
+         <dmlExpression><![CDATA[in:\HEADER\ISA\e07_I05]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1931139421" elementPath="/HEADER/ISA/e08_I07/">
+         <dmlExpression><![CDATA[in:\HEADER\ISA\e08_I07]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1895192703" elementPath="/HEADER/GS/e02_0142/">
+         <dmlExpression><![CDATA[in:\HEADER\GS\e02_0142]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="284854238" elementPath="/HEADER/ISA/e13_I12/">
+         <dmlExpression><![CDATA[in:\HEADER\ISA\e13_I12]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1619041827" elementPath="/HEADER/GS/e06_0028/">
+         <dmlExpression><![CDATA[in:\HEADER\GS\e06_0028]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1875164393" elementPath="/HEADER/ISA/e06_I06/">
+         <dmlExpression><![CDATA[in:\HEADER\ISA\e06_I06]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1120491646" elementPath="/HEADER/GS/e08_0480/">
+         <dmlExpression><![CDATA[in:\HEADER\GS\e08_0480]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="426004833" elementPath="/HEADER/GS/e07_0455/">
+         <dmlExpression><![CDATA[in:\HEADER\GS\e07_0455]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-752900251" elementPath="/TRANSACTION/ST/143/">
+         <dmlExpression><![CDATA[in:\TRANSACTION\ST\!143!]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="840864832" elementPath="/HEADER/GS/e03_0124/">
+         <dmlExpression><![CDATA[in:\HEADER\GS\e03_0124]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-441342979" elementPath="/HEADER/ISA/e15_I14/">
+         <dmlExpression><![CDATA[in:\HEADER\ISA\e15_I14]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-736333093" elementPath="/HEADER/ISA/e12_I11/">
+         <dmlExpression><![CDATA[in:\HEADER\ISA\e12_I11]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="177072858" elementPath="/HEADER/GS/e01_0479/">
+         <dmlExpression><![CDATA[in:\HEADER\GS\e01_0479]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1902826956" elementPath="/HEADER/GS/e05_0030/">
+         <dmlExpression><![CDATA[in:\HEADER\GS\e05_0030]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="686237296" elementPath="/HEADER/ISA/e11_I10/">
+         <dmlExpression><![CDATA[in:\HEADER\ISA\e11_I10]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1954877918" elementPath="/HEADER/ISA/e04_I04/">
+         <dmlExpression><![CDATA[in:\HEADER\ISA\e04_I04]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2067851207" elementPath="/HEADER/GS/e04_0027/">
+         <dmlExpression><![CDATA[in:\HEADER\GS\e04_0027]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1036552680" elementPath="/HEADER/">
+         <dmlExpression><![CDATA[%occurs := 0;
+if defined in:\HEADER then
+	%occurs := 1;
+%occurs times]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1686439825" elementPath="/HEADER/ISA/e01_I01/">
+         <dmlExpression><![CDATA[in:\HEADER\ISA\e01_I01]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1454153287" elementPath="/HEADER/ISA/e10_I09/">
+         <dmlExpression><![CDATA[in:\HEADER\ISA\e10_I09]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>
