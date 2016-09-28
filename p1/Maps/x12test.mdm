@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <map xmlns="http://www.axway.com/mappingServices/map" id="77bd23a0-fe6b-4982-9e22-0c97803e8914">
-   <signature appVersion="3.1.2" lastUpdatedOn="28/09/2016 14:19:05 +0300"/>
+   <signature appVersion="3.1.2" lastUpdatedOn="28/09/2016 14:17:25 +0300"/>
    <outputBusinessDocument businessDocument="~/Business Documents/x12test.bdoc" alias="out"/>
    <inputBusinessDocuments>
       <inputBusinessDocument businessDocument="~/Business Documents/x12test.bdoc" alias="in"/>
@@ -79,7 +79,7 @@
          <dmlExpression><![CDATA[in:\HEADER\GS\e04_0027]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="1686439825" elementPath="/HEADER/ISA/e01_I01/">
-         <dmlExpression><![CDATA[in:\HEADER\ISA\e03_I03]]></dmlExpression>
+         <dmlExpression><![CDATA[in:\HEADER\ISA\e02_I02]]></dmlExpression>
       </mapElement>
       <mapElement elementHash="-1454153287" elementPath="/HEADER/ISA/e10_I09/">
          <dmlExpression><![CDATA[in:\HEADER\ISA\e10_I09]]></dmlExpression>
